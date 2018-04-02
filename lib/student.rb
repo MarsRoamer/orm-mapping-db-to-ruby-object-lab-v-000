@@ -37,8 +37,8 @@ class Student
       WHERE grade = 10
       LIMIT #{x}
       SQL
-      DB[:conn].execute(sql)
-      
+      test DB[:conn].execute(sql)
+
     binding.pry
   end
 
