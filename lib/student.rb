@@ -37,9 +37,7 @@ class Student
       WHERE grade = 10
       LIMIT #{x}
       SQL
-      test = DB[:conn].execute(sql)
-
-    binding.pry
+      DB[:conn].execute(sql)
   end
 
   def self.count_all_students_in_grade_9
